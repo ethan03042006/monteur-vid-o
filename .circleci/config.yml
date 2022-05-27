@@ -1,0 +1,83 @@
+<!DOCTYPE htlm>
+<htlm lang= fr>
+ <head>
+  <metacharset= utf-8>
+  <title>majaccent</title>
+  <link rel="stylesheet" type="text/css" href="style1.css" />
+
+ </head>
+
+ <body>
+ 	<strong>outils, majuscule, maj, et, accent, A, a, E, e, C, c,</strong>
+ 	<!--Pour le carré du fond-->
+ 	<div class="boite">
+ 	 <h1>Outils MajAccent</h1>
+ 	 <h3>By Ethn</h3>
+ 	 <!--Pour les 4 carrés qui entoure les boutons-->
+ 	 <button id="pboite1" onclick="clicked1()">À</button>
+ 	 <button id="pboite2" onclick="clicked2()">É</button>
+ 	 <button id="pboite3" onclick="clicked3()">È</button>
+ 	 <button id="pboite4" onclick="clicked4()">Ç</button>
+
+ 	 <p id="alert">Élement copié!</p> 
+ 	</div>
+ 	
+ 	<script type="text/javascript">
+ 		
+        function clicked1(){
+          //le copiage
+         var boite1 = document.getElementById('pboite1').innerHTML;
+
+          navigator.clipboard.writeText(boite1);
+          //la notif
+         var notif = document.getElementById("alert")
+          notif.style.visibility = "visible";
+          function cacher(){
+          	notif.style.visibility = "hidden";
+          }
+         setTimeout(cacher,800);
+          
+
+
+        }
+
+        function clicked2(){
+         var boite2 = document.getElementById('pboite2').innerHTML;
+
+          navigator.clipboard.writeText(boite2);
+          var notif = document.getElementById("alert")
+          notif.style.visibility = "visible";
+          function cacher(){
+          	notif.style.visibility = "hidden";
+          }
+         setTimeout(cacher,800);
+        }
+
+        function clicked3(){
+         var boite3 = document.getElementById('pboite3').innerHTML;
+
+          navigator.clipboard.writeText(boite3);
+          var notif = document.getElementById("alert")
+          notif.style.visibility = "visible";
+          function cacher(){
+          	notif.style.visibility = "hidden";
+          }
+         setTimeout(cacher,800);
+        }
+
+        function clicked4(){
+         var boite4 = document.getElementById('pboite4').innerHTML;
+
+          navigator.clipboard.writeText(boite4);
+          var notif = document.getElementById("alert")
+          notif.style.visibility = "visible";
+          function cacher(){
+          	notif.style.visibility = "hidden";
+          }
+         setTimeout(cacher,800);
+        }
+   
+    </script>
+    
+ </body>
+</htlm>
